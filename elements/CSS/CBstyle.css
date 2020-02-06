@@ -1,0 +1,106 @@
+.chatbox{
+  width: 90%;
+  margin: 1.6% 5% !important;
+}
+
+.chatbar{
+  width: 100%;
+  border-radius: 2px;
+  padding-left: 2%;
+}
+
+.dropdown{
+  float: left;
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.displayChat{
+    display: block !important;
+    overflow: visible;
+}
+
+/* chatbot messages container */
+.dropdown-content .CbMessagesCont, .displayChat .CbMessagesCont {
+  height: 85%;
+  width: 95%;
+  margin: 3% 2.5% 0%;
+  color: white;
+  overflow: scroll;
+  background: rgba(242, 242, 242, 0.9);
+}
+
+
+
+/*chatbot suggestion buttons*/
+.dropdown-content .CbSugBtnsCont, .displayChat .CbSugBtnsCont{
+  width: 95%;
+  margin: 1% 2.5% 0%;
+}
+
+
+/*suggestion button style*/
+.optBtn{
+  height: 100%;
+  width: 20%;
+  font-size: 10pt;
+  margin: 0% 2%;
+  background: white;
+  color: black;
+  border: none;
+  float: right;
+}
+
+.optBtn:hover{
+  background: rgba(102, 102, 102, 0.9);;
+  color: white;
+}
+
+
+/*Chatbot message block*/
+.cbMsgBlock{
+  padding: none !important;
+  margin: 2% 1% !important;
+  width: 70%;
+  display: flex;
+  align-items: center !important;
+  border: 0.3px solid black;
+  border-radius: 5px;
+}
+
+#right{
+  float: right;
+  text-align: right !important;
+  background-color: rgba(102, 102, 102, 0.9);
+}
+
+#left{
+  float: left;
+  text-align: left !important;
+  background-color: rgba(140, 140, 140, 0.9);
+}
+
+/*Chatbot messages text style*/
+.CbMessages{
+  display: inline-block;
+  font-size: 12pt;
+  margin: 3% 4%;
+  width: 85%;
+}
+
+/*Chatbot icons*/
+.msgIcon{
+  display: inline;
+  width: 10%;
+  margin: 4%;
+}
