@@ -12,3 +12,6 @@ Development:
     
 Website demo:
   https://drive.google.com/open?id=1tRhsaoZzOxu9nAoPd9UecHQKtD_JCT3h 
+  
+Note:
+  This repository is missing the image and SQL files 
