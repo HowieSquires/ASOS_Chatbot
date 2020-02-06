@@ -1,0 +1,84 @@
++ start
+- Welcome to ASOS! \n
+^ I am your personal shopping assistant! I can help you with a range of search queries! \n
+^ What can I help you with today?
+
+
++ [*]@hello[*]
+* <get gender> == undefined => Hey there! Before we begin shopping, are we looking for Mens or Womens clothes? 
+- Hey there! What are you looking for? 
+- Oh hey! Didn't see you there! What are you after?
+- Hi! How can I help?
+
+
++ [*](female|male)[*]
+* <star> == male => Here you are, all the <star> <get type>s! Can I refine this to a certain colour or brand? <set gender=<star>>
+* <star> == female => Here you are, all the <star> <get type>s! Can I refine this to a certain colour or brand? <set gender=<star>>
+//* <get type> == undefined => Awesome, and what type of item are we looking for? (A top, jumper, underwear) <set gender=<star>>
+
+
+
+
+
+
+//Used to set the chatbot variable sync with the website page gender
++ (setfemale|setmale)
+* <star> == setmale => <set gender = male>
+* <star> == setfemale => <set gender = female>
+^ <get gender>
+
+
+
+
++ [*](@type)[*]
+* <get colour> == undefined => A new <star>? I'll fetch some for you! Any specific colour?
+^ <set type=<star>> 
+* <get colour> != undefined => A <get colour> <star> is a great choice!
+^ <set type=<star>> 
+
+
++ [*](@colours)[*]
+* <get type> == undefined => What item would you like in <star>?
+^ <set colour=<star>>
+* <get type> != undefined => A <star> <get type> is a great choice! 
+^ <set colour=<star>>
+
+
++ [*](@brand)[*]
+- Thats a great brand!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//+ [*]@all[*]
+//- <set gender = all>
+//^ <set type = undefined>
+//^ Here you go, you can find everything below!
+
+
+
++ [*]@thank[*]
+- You're welcome! Anything else?
+- No worries! Come again soon!
+
+
++ [*]@bye[*]
+- Thanks for shopping with ASOS! 
+- Hope you found what you were searching for!
+
+
+
++ * 
+- Sorry, I didn't quite catch that! Try asking something else?
+- Sorry, I don't understand what you mean, I can only talk about clothes remember!
