@@ -1,0 +1,200 @@
+/*containers*/
+body{
+	background-color: white;
+    color: white;
+}
+
+.NoPad{
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+}
+
+/*rows*/
+.header{
+	background-color: black;
+	height: 60px;
+	padding-left: 8.33%;
+}
+
+.promoBar{
+	height: 60px;
+}
+
+.PgNav{
+	height: 50px;
+	padding-left: 30%;
+	margin-top: 30px;
+}
+
+.NavBar{
+	background-color: rgb(98, 101, 103);
+	height: 50px;
+	padding-left: 8.33%;
+}
+
+
+/* Columns */
+.main{
+	height: 698px;
+	background-image: url('../res/img/Homefeat.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 92%;
+}
+
+.mainText{
+	background-color: white;
+	width: 75%;
+	text-align: center;
+	margin-left: 12.5%;
+}
+
+.mainFooter{
+	background-color: black;
+	width: 94%;
+	height: 69px;
+	margin-left: 3%;
+}
+
+
+/* Navigation */
+
+.NavBtn, .HdBtn{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: rgb(98, 101, 103);
+    border: none;
+    color: white;
+}
+
+.HdBtn{
+	background-color: black;
+	margin: none;
+	padding: none;
+}
+
+#Mens, #Womens{
+	border-left: 0.5px grey solid;
+	border-right: 0.5px grey solid;
+	padding: none !important;
+}
+
+button#Mens:hover:not(.Active), button#Womens:hover:not(.Active){
+	background-color: grey;
+}
+
+.Active{
+	background-color: rgb(98, 101, 103);
+}
+
+.PgBtn{
+	display: block;
+	background-color: white;
+    height: 100%;
+    text-decoration: none;
+    padding-top: 6%;
+}
+
+.MensBtn{
+	margin-left: 25% !important;
+}
+
+.PgBtn:hover{
+	background-color: black;
+}
+
+.NavBtn:hover{
+	background-color: white;
+	color: rgb(98, 101, 103);
+}
+
+
+
+/* Text */
+h1, h2{
+	color: black;
+	font-weight: bold; 
+	font-size: 40pt;
+}
+
+h2{
+	font-weight: normal;
+	font-size: 18pt;
+}
+
+h3{
+	font-size: 20px;
+}
+
+#lgBtn>a, a:visited, a:hover{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12pt;
+}
+
+#smBtn>a, a:visited, a:hover{
+	color: white;
+	font-size: 10pt;
+	text-align: center;
+}
+
+#smBtn>a:hover{
+	color: rgb(98, 101, 103);
+}
+
+#PgBtnTxt>a{
+	color: black;
+	font-size: 12pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+#PgBtnTxt>a:hover{
+	color: white;
+
+}
+
+.footText{
+	font-weight: bold;
+	text-align: left !important;
+}
+
+.subFootText{
+	font-size: 10pt;
+	text-align: left !important;
+}
+
+
+/* Input */
+.index p{
+	text-align: center;
+	margin: auto;
+}
+
+.index #left .CbMessages{
+	text-align: left !important;
+}
+
+
+.index #right .CbMessages{
+	text-align: right !important;
+}
+
+/* Images */
+#logo{
+	padding: 15px 0px;
+}
+
+.symbol{
+	height: 30px;
+	margin-top: 12px;
+	margin-left: 30px
+}
+
+form{
+	display: flex;
+}
