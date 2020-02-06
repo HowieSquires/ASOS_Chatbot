@@ -1,0 +1,545 @@
+
+
+//arrays
+
+! array hello = hello hey howdy sup hi 
+
+! array thank = thanks merci cheers thank greatful appreciate 
+
+! array bye = good bye|see you
+^ goodbye adios laters
+
+
+
+! array all = all everything clear any
+
+! array gender = male female
+
+! array type = top jumper coat bottoms underwear
+! array settype = settop setjumper setcoat setbottoms setunderwear
+
+! array fit = bodycon loose midi muscle oversized regular relaxed skinny slim tailored tapered tight cropped lightweight
+
+! array colours = animal beige black blue indigo brown burgundy camel cinnamon gold green grey white khaki mint multi mustard navy orange pink red yellow 
+
+! array brand = aape adidas allsaints aratta bershka boss celio collusion dickies diesel ellesse espirit hollister jdy levis lindex lipsy mango mennace missguided monki nakd nike nudie pimkie prettylittlething 
+^ pullandbear puma quicksilver reclaimed replay siksilk spanx stradivarius timberland vans vila warehouse weekday yas
+^ ann summers|asos design|calvin klein|emporio armani|gym king|kings of indigo|moss london|new look|noisy may|paul smith|polo ralph lauren|rip n dip|river island|save x fenty|tommy hilfiger|tutti rouge|twisted tailor
+^ vero moda|wednesdays girl|wolf and whistle
+
+! array style = jeans
+^ shorts skirt trouser leggings chino joggers //bottoms styles
+^ boucle jacket coat blazer raincoat cape parka harrington waistcoat bomber fanorak 
+^ trench coat|worker jacket|reissue jacket|track jacket //coat styles
+^ hoodie sweatshirt cardigan
+^ short sleeve hoodie|jersey bomber| //jumper styles
+^ bodysuit tshirts turtleneck blouse shirt polo vest  
+^ boy shirt|long sleeve polo|ringer tshirt|long sleeve tshirt //top styles
+^ set bra thong bralet trunk boxer briefs jockstrap  //underwear styles 
+
+! array design = abstract balcony bandeau boucle cable check cutout denim distressed fishnet lace leather logo mesh neppy paisley pencil plain pleated print quilted rainbow sequin reflective retro ribbed ripped stitch stripe studded textured washed 
+^ colour block|desert nerm camo|geo print|high shine|open stitch|pin stripe|polka dot|tie die|tropical print
+
+! array material = polyester polyurethane cotton acrylic nylon polyamide viscose elastane elastomultiester modacrylic spandex linen wool ramie
+
+! array features = lapels buttons pockets hood press collar zip trims cuffs waistband cinch straps sleeveless crop epaulettes belted lettuce lined placket ruffle
+^ belt loops|long sleeve|short sleeve|form fitting|split sides|crew neck|dropped shoulders|contrast panel|high neck|mesh lining|wrap front|frill neck|wide cut leg|faux fur|plunge neck|bell sleeves|round neck|square neck|triangle cups|v neck
+
+! array intent = formal evening outerwear everyday casual active beach lazy festival swim
+
+! array weather = cloudy cold sunny warm windy wet 
+
+! array season = spring summer autumn winter
+
+
+
+
+
+//gender subs
+! sub man = male
+! sub men = male
+! sub mens = male
+! sub men's = male
+! sub his = male
+! sub masculine = male
+! sub gentlemen = male
+! sub gentleman = male
+! sub gents = male
+! sub boys = male
+! sub boy = male
+
+! sub woman = female
+! sub womans = female
+! sub women = female
+! sub womens = female
+! sub women's = female
+! sub feminine = female
+! sub ladies = female
+! sub girl = female
+! sub girls = female
+
+
+
+//type subs
+! sub tops = top
+! sub upper = top
+! sub uppers = top
+
+! sub jumpers = jumper
+
+! sub bottom = bottoms
+
+! sub coats = coat
+
+! sub underwears = underwear
+! sub pants = underwear
+! sub under = underwear
+
+
+
+//fit subs
+! sub body = bodycon
+! sub con = bodycon 
+
+! sub lose = loose
+
+! sub baggy = relaxed
+! sub full = relaxed 
+
+! sub straight = regular 
+! sub bootcut = regular 
+
+! sub traditional = tailored 
+! sub tailor = tailored 
+! sub cut = tailored 
+
+! sub taper = tapered
+! sub regal = tapered 
+
+
+
+//colour subs
+! sub leopard = animal
+! sub tiger = animal
+
+! sub ebony = black
+! sub crow = black
+! sub midnight = black
+! sub oil = black
+! sub onyx = black
+! sub soot = black
+! sub sable = black
+! sub jet = black
+! sub coal = black
+! sub jade = black
+! sub spider = black
+
+! sub azure = blue 
+! sub cyan = blue
+! sub sky = blue
+! sub cobalt = blue
+! sub lapis = blue
+! sub admiral = blue
+! sub sapphire = blue
+! sub artic = blue
+! sub ocean = blue
+! sub teal = blue
+! sub teale = blue
+
+! sub wheat = beige
+! sub tan = beige
+! sub granola = beige 
+! sub oat = beige
+! sub sand = beige
+
+! sub coffee = brown
+! sub mocha = brown
+! sub peanut = brown
+! sub wood = brown
+! sub walnut = brown
+! sub caramel = brown
+! sub gingerbread = brown
+! sub chocolate = brown
+! sub tawny = brown
+! sub brunette = brown
+
+! sub golden = gold 
+! sub goldenrod = gold
+
+! sub olive = green
+! sub chartreuse = green
+! sub lime = green
+! sub fern = green
+! sub emerald = green
+! sub shamrock = green
+! sub pickle = green
+! sub basil = green
+
+! sub silver = grey
+! sub gray = grey 
+! sub shadow = grey
+! sub graphite = grey
+! sub iron = grey
+! sub smoke = grey
+! sub smokey = grey
+! sub ash = grey
+! sub pebble = grey
+! sub fossil = grey
+! sub charcoal = grey
+
+! sub royal = navy
+
+! sub coral = orange
+! sub tangerine = orange
+! sub bronze = orange
+! sub apricot = orange
+! sub carrot = orange
+
+! sub salmon = pink
+! sub fuchsia = pink
+! sub puce = pink
+! sub mauve = pink
+! sub lavender = pink
+! sub plum = pink
+! sub flamingo = pink
+! sub bubblegum = pink
+! sub cameo = pink
+
+! sub maroon = red
+! sub crimson = red
+! sub cherry = red
+! sub jam = red
+! sub crimson = red
+! sub ruby = red
+! sub scarlet = red
+! sub blood = red 
+! sub blush = red
+
+! sub ivory = white
+! sub cream = white
+! sub eggshell = white
+! sub milk = white
+
+! sub lemon = yellow
+! sub banana = yellow
+! sub honey = yellow
+! sub mustard = yellow
+
+
+
+
+//brand subs
+! sub aape by a bathing ape = aape
+! sub a bathing ape = aape
+! sub ape = aape
+
+! sub ad = adidas
+
+! sub all saints = allsaints
+! sub as = allsaints
+
+! sub asos = asos design
+! sub design by asos = asos design
+! sub design = asos design
+
+! sub dickie's = dickies
+! sub dicks = dickies
+! sub dicky = dickies
+! sub dickys = dickies
+
+! sub elese = ellesse
+! sub ellese = ellesse
+! sub elesse = ellesse
+
+! sub levs = levis
+! sub levi's = levis
+! sub levi = levis
+
+! sub naked = nakd
+
+! sub pretty little thing = prettylittlething
+! sub plt = prettylittlething
+
+! sub pull&bear = pullandbear
+! sub pull & bear = pullandbear
+! sub pullbear = pullandbear
+! sub pull bear = pullandbear
+! sub pb = pullandbear
+
+! sub quiksilver = quicksilver
+
+! sub sicksilk = siksilk
+
+! sub anns = ann summers
+! sub summers = ann summers
+
+! sub calvin = calvin klein
+! sub klein = calvin klein
+! sub klien = calvin klein
+! sub ck = calvin klein
+
+! sub emporio = emporio armani
+! sub armani = emporio armani
+! sub armarni = emporio armani
+! sub ea = emporio armani
+
+! sub king = gym king
+! sub gk = gym king
+
+! sub king of indigo = kings of indigo
+! sub koi = kings of indigo 
+
+! sub moss = moss london
+! sub ml = moss london
+
+! sub nl = new look
+
+! sub ralph = polo ralph lauren
+! sub lauren = polo ralph lauren
+! sub ralph lauren = polo ralph lauren 
+
+! sub ripndip = rip n dip
+! sub rip and dip = rip n dip
+! sub rnd = rip n dip
+
+! sub river = river island
+! sub island = river island
+! sub ri = river island
+
+! sub savexfenty = save x fenty
+! sub save = save x fenty
+! sub fenty = save x fenty
+
+! sub timber = timberland 
+
+! sub tommy = tommy hilfiger
+! sub hilfiger = tommy hilfiger 
+! sub th = tommy hilfiger 
+! sub tomm = tommy hilfiger
+
+! sub tutti = tutti rouge
+! sub tr = tutti rouge
+
+! sub twisted = twisted tailor
+! sub tt = twisted tailor 
+
+! sub vero = vero moda
+! sub moda = vero moda
+! sub vm = vero moda
+
+! sub wednesday's girl = wednesdays girl
+! sub wednesday girl = wednesdays girl
+! sub wednesday = wednesdays girl
+
+! sub wolf&whistle = wolf and whistle
+! sub wolf = wolf and whistle
+! sub whistle = wolf and whistle
+! sub whistel = wolf and whistle
+! sub wolfandwhistle = wolf and whistle 
+! sub wolf whistle = wolf and whistle 
+
+
+// style subs
+! sub jean = jeans
+! sub skirts = skirt
+! sub trousers = trouser 
+! sub legging = leggings 
+! sub chinos = chino 
+! sub sweatpants = joggers 
+! sub sweatpant = joggers
+! sub jogger = joggers
+! sub boucles = boucle
+! sub jackets = jacket
+! sub coats = coat
+! sub blazers = blazer
+! sub suit = blazer
+! sub raincoats = raincoat
+! sub capes = cape
+! sub parkas = parka
+! sub harringtons = harrington
+! sub wasitcoat = waistcoats
+! sub bombers = bomber
+! sub fanoraks = fanorak
+! sub trench coats = trench coat
+! sub bodysuits = bodysuit
+! sub tshirt = tshirts
+! sub turtlenecks = turtleneck
+! sub blouses = blouse
+! sub shirts = shirt
+! sub bandeau = bandeaus 
+! sub polos = polo 
+! sub vests = vest
+! sub mac = raincoat
+! sub anorak = raincoat
+! sub anarak = raincoat
+! sub harington = harrington
+! sub trenchcoat = trench coat
+! sub hooody = hoodie 
+! sub short sleeve hoody = short sleeve hoodie
+! sub t-shirt = tshirts
+! sub t shirt = tshirts
+! sub tee = tshirts
+! sub turtle neck = turtleneck
+! sub tank = vest
+! sub sets = set
+! sub bras = bra
+! sub thongs = thong
+! sub bralets = bralet
+! sub trunks = trunk
+! sub boxers = boxer
+! sub brief = briefs
+! sub jockstraps = jockstrap
+
+
+
+//design subs
+! sub checked = check
+! sub checkered = check 
+
+! sub fish net = fishnet 
+
+! sub nep = neppy
+
+! sub pleate = pleated
+
+! sub printed = print
+
+! sub quilt = quilted
+
+! sub rib = ribbed
+
+! sub stitched = stitched 
+
+! sub striped = stripe
+
+! sub stud = studded
+
+! sub texture = tetured
+
+! sub wash = washed 
+
+! sub shiney = high shine
+
+! sub dotty = polka dot
+! sub polka = polka dot 
+! sub dot = polka dot 
+! sub dotted = polka dot 
+
+! sub die = tie die
+! sub died = tie die
+
+! sub puff = quilted
+! sub puffed = quilted
+! sub puffer = quilted
+! sub quilt = quilted
+
+
+
+//features subs
+! sub lapel = lapels
+
+! sub button = buttons
+! sub buttoned = buttons
+
+! sub pocket = pockets
+
+! sub hooded = hood
+
+! sub collared = collar
+
+! sub trim = trims
+
+! sub cuff = cuffs
+
+! sub stap = straps
+! sub strapped = straps
+
+! sub belt = belted 
+
+! sub ruffles = ruffle
+
+! sub loops = belt loops
+
+
+
+//intent subs
+! sub well dressed = formal
+! sub smart = formal 
+! sub business = formal 
+! sub classy = formal
+! sub upper class = formal
+! sub dinner = formal
+! sub awards = formal
+! sub wedding = formal
+! sub funeral = formal 
+! sub meeting = formal
+
+! sub club = outerwear
+! sub party = outerwear
+
+! sub run = active
+! sub running = active
+! sub gym = active
+! sub lifting = active
+! sub sport = active
+! sub rugby = active
+! sub football = active
+! sub tennis = active
+! sub badminton = active
+! sub golf = active
+! sub baseball = active
+! sub basketball = active
+! sub volleyball = active
+! sub dance = active
+! sub hockey = active
+! sub cricket = active
+
+! sub surf = beach
+! sub coast = beach
+
+! sub chill = lazy
+! sub lounge = lazy
+! sub lounging = lazy
+! sub cosy = lazy
+! sub cozy = lazy
+! sub comfy = lazy
+! sub comfortable = lazy
+
+! sub music = festival
+! sub concert = festival
+
+! sub swimming = swim 
+
+
+
+//weather subs
+! sub cloud = cloudy
+! sub overcast = cloudy
+! sub dull = cloudy
+
+! sub freezing = cold
+! sub chilly = cold
+
+! sub sun = sunny
+! sub bright = sunny
+! sub happy = sunny
+
+! sub dry = warm 
+! sub hot = warm 
+! sub boiling = warm 
+
+! sub wind = windy
+! sub gusty = windy 
+! sub breeze = windy
+! sub breezey = windy 
+! sub blowy = windy 
+! sub stormy = windy
+! sub storm = windy 
+
+! sub raining = wet
+! sub rain = wet
+! sub damp = wert
+! sub miserable = wet
+! sub disgusting = wet 
+! sub hail = wet
+! sub hale = wet
